@@ -5,7 +5,7 @@ import numpy as np
 from geopy.distance import geodesic 
 
 app = Flask(__name__)
-model = pickle.load(open('model2.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 city_center_coordinates = [55.7522, 37.6156]
 
 def get_azimuth(latitude, longitude):

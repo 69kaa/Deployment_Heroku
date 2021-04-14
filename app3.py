@@ -2,7 +2,6 @@ from flask import Flask,request, url_for, redirect, render_template, jsonify
 import pandas as pd
 import pickle
 import numpy as np
-from geopy.distance import geodesic 
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl','rb'))

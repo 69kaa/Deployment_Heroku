@@ -7,8 +7,17 @@ app = Flask(__name__)
 model = pickle.load(open('model.pkl','rb'))
 
 @app.route('/')
+@app.route('/1')
 def home():
+	return render_template('1.html')
+    
+@app.route('/2')
+def predict_page():
 	return render_template('2.html')
+    
+@app.route('/3')
+def graphics_page():
+	return render_template('3.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():

@@ -9,15 +9,15 @@
 		  <nav>
 			<div class="logo-box">
 			  <h1 class="logo">
-				<a href="1.html">
-				  <img width="65" height="65" src="images/logo5.png">
+				<a href="{{ url_for('home')}}">
+				 <img width="65" height="65" src="../static/logo5.png">
 				</a>
 			  </h1>
 				<p class="name">Сервис аналитики жилой недвижимости</p>
 			</div>
 			<ul>
-			  <li><a href="1.html">Главная</a></li>
-			  <li><a href="3.html">Аналитические графики</a></li>
+			  <li><a href="{{ url_for('home')}}">Главная</a></li>
+			  <li><a href="{{ url_for('graphics_page')}}">Аналитические графики</a></li>
 
 		   </ul>
 		  </nav>

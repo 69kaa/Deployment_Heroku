@@ -25,7 +25,7 @@
 		<div class="parametrs">
 			<h3>Оценка стоимости жилой недвижимости в г. Москве</h3>
 			<p>Для оценки необходимо знать координаты оцениваемого объекта. Узнать их можно с помощью <a href="https://yandex.ru/maps">Яндекс.Карт</a> </p>
-			<form action="{{ url_for('predict')}}"method="POST">
+			<form action="{{ url_for('predict_page')}}"method="POST">
 				<label for="Material">Материал дома: </label>
 					<select class="value" name="Material" required="required"/>
 						<option value="0">Блок</option>

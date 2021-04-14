@@ -6,15 +6,15 @@ import numpy as np
 #app = Flask(__name__)
 #model = pickle.load(open('model.pkl','rb'))
 
-@app.route('/1')
+@app.route('/home')
 def home():
 	return render_template('1.html')
     
-@app.route('/2')
+@app.route('/ocenka')
 def predict_page():
 	return render_template('2.html')
     
-@app.route('/3')
+@app.route('/graphics')
 def graphics_page():
 	return render_template('3.html')
 

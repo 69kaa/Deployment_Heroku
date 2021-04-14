@@ -6,7 +6,6 @@ import numpy as np
 #app = Flask(__name__)
 #model = pickle.load(open('model.pkl','rb'))
 
-@app.route('/')
 @app.route('/1')
 def home():
 	return render_template('1.html')

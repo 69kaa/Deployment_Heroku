@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import numpy as np
 
-#app = Flask(__name__)
+app = Flask(__name__)
 #model = pickle.load(open('model.pkl','rb'))
 
 @app.route('/home')
